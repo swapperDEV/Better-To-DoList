@@ -82,6 +82,7 @@ const addToDo = () => {
 addBtn.addEventListener('click', () => {
     if(input.value != "") {
     addToDo()}
+    input.value = ""
 })
 
 input.addEventListener('keyup', (e) => {
