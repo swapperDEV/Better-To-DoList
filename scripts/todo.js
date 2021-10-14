@@ -80,7 +80,8 @@ const addToDo = () => {
 }
 
 addBtn.addEventListener('click', () => {
-    addToDo()
+    if(input.value != "") {
+    addToDo()}
 })
 
 input.addEventListener('keyup', (e) => {
@@ -101,6 +102,8 @@ const editElement = (e) => {
 list.addEventListener('click', (e) => {
     if(e.target.closest('button').classList.contains('trash')) {
         e.target.closest('li').remove()
+        todoCounter--;
+        document.querySelector('.number').textContent = todoCounter
         save()
     } else if(e.target.closest('button').classList.contains('edit')) {
         editElement(e)
