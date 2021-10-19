@@ -88,6 +88,7 @@ addBtn.addEventListener('click', () => {
 input.addEventListener('keyup', (e) => {
     if(e.keyCode == 13) {
         addToDo()
+        input.value = ""
     }
 })
  

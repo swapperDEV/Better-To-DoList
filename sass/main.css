@@ -181,4 +181,16 @@
   color: gray !important;
   text-decoration: line-through;
 }
+
+.filter {
+  border: 1px solid gray;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  margin-top: 10px;
+  padding: 2px;
+  padding-left: 12px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+  color: gray;
+}
 /*# sourceMappingURL=main.css.map */
